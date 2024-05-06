@@ -169,6 +169,21 @@
           "Member": "TextureScale",
           "Value": 1.0,
           "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Y",
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Width",
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "Height",
+          "Time": 0.0
         }
       ],
       "SourceType": 2,
@@ -190,19 +205,30 @@
         {
           "Type": "float",
           "Member": "Height",
-          "Value": 8.0,
+          "Value": 10.0,
           "Time": 0.0
         },
         {
           "Type": "float",
           "Member": "Width",
-          "Value": 8.0,
+          "Value": 14.0,
           "Time": 0.0
         },
         {
           "Type": "float",
           "Member": "Y",
           "Value": 2.0,
+          "Time": 0.0
+        },
+        {
+          "Type": "float",
+          "Member": "X",
+          "Time": 0.0
+        },
+        {
+          "Type": "bool",
+          "Member": "Visible",
+          "Value": false,
           "Time": 0.0
         }
       ],

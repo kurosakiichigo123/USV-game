@@ -111,7 +111,7 @@
       "GenerateTimedEmit": true
     },
     {
-      "InstanceName": "SolidCollision",
+      "InstanceName": "FrontCollision",
       "SourceClassType": "FlatRedBall.TileCollisions.TileShapeCollection",
       "Properties": [
         {
@@ -206,7 +206,7 @@
       "GenerateTimedEmit": true
     },
     {
-      "InstanceName": "PlayerVsSolidCollision",
+      "InstanceName": "PlayerVsFrontCollision",
       "SourceClassType": "FlatRedBall.Math.Collision.CollidableListVsTileShapeCollectionRelationship<Entities.Player>",
       "Properties": [
         {
@@ -226,7 +226,7 @@
         },
         {
           "Name": "SecondCollisionName",
-          "Value": "SolidCollision",
+          "Value": "FrontCollision",
           "Type": "String"
         },
         {
@@ -266,13 +266,89 @@
         },
         {
           "Name": "FirstCollisionMass",
+          "Value": 0.0,
+          "Type": "float"
+        },
+        {
+          "Name": "CollisionElasticity",
+          "Value": 0.25,
+          "Type": "float"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "FlatRedBall.Math.Collision.CollidableListVsTileShapeCollectionRelationship<Entities.Player>",
+      "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "PlayerVsBackCollision",
+      "SourceClassType": "FlatRedBall.Math.Collision.CollidableListVsTileShapeCollectionRelationship<Entities.Player>",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "IsAutoNameEnabled",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "FirstCollisionName",
+          "Value": "PlayerList",
+          "Type": "String"
+        },
+        {
+          "Name": "SecondCollisionName",
+          "Value": "BackCollision",
+          "Type": "String"
+        },
+        {
+          "Name": "IsCollisionActive",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "IsAutomaticallyApplyPhysicsChecked",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "FirstCollisionMass",
+          "Value": 0.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SecondCollisionMass",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SoftCollisionCoefficient",
           "Value": 1.0,
           "Type": "float"
         },
         {
           "Name": "CollisionElasticity",
-          "Value": 1.0,
+          "Value": 0.25,
           "Type": "float"
+        },
+        {
+          "Name": "FirstSubCollisionSelectedItem",
+          "Value": "<Entire Object>",
+          "Type": "String"
+        },
+        {
+          "Name": "IsDealDamageChecked",
+          "Value": true,
+          "Type": "Object"
+        },
+        {
+          "Name": "CollisionType",
+          "Value": 2,
+          "Type": "int"
         }
       ],
       "InstructionSaves": [],
@@ -308,6 +384,68 @@
       "SourceType": 2,
       "SourceFile": "FlatRedBall.Entities.CameraControllingEntity",
       "AttachToContainer": true,
+      "GenerateTimedEmit": true
+    },
+    {
+      "InstanceName": "BackCollision",
+      "SourceClassType": "FlatRedBall.TileCollisions.TileShapeCollection",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "CollisionCreationOptions",
+          "Value": 6,
+          "Type": "int"
+        },
+        {
+          "Name": "CollisionTileSize",
+          "Value": 16.0,
+          "Type": "float"
+        },
+        {
+          "Name": "CollisionFillWidth",
+          "Value": 32,
+          "Type": "int"
+        },
+        {
+          "Name": "CollisionFillHeight",
+          "Value": 1,
+          "Type": "int"
+        },
+        {
+          "Name": "InnerSizeWidth",
+          "Value": 800.0,
+          "Type": "float"
+        },
+        {
+          "Name": "InnerSizeHeight",
+          "Value": 600.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SourceTmxName",
+          "Value": "Map",
+          "Type": "String"
+        },
+        {
+          "Name": "CollisionTileTypeName",
+          "Value": "SolidCollision",
+          "Type": "String"
+        },
+        {
+          "Name": "TmxCollisionName",
+          "Value": "collision-back",
+          "Type": "String"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "FlatRedBall.TileCollisions.TileShapeCollection",
+      "HasPublicProperty": true,
+      "SetByDerived": true,
       "GenerateTimedEmit": true
     }
   ],

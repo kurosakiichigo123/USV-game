@@ -75,7 +75,7 @@
       "DefinedByBase": true
     },
     {
-      "InstanceName": "SolidCollision",
+      "InstanceName": "FrontCollision",
       "SourceClassType": "FlatRedBall.TileCollisions.TileShapeCollection",
       "Properties": [
         {
@@ -134,6 +134,68 @@
       "SourceFile": "FlatRedBall.TileCollisions.TileShapeCollection",
       "HasPublicProperty": true,
       "AttachToContainer": true,
+      "GenerateTimedEmit": true,
+      "DefinedByBase": true
+    },
+    {
+      "InstanceName": "BackCollision",
+      "SourceClassType": "FlatRedBall.TileCollisions.TileShapeCollection",
+      "Properties": [
+        {
+          "Name": "AssociateWithFactory",
+          "Value": true,
+          "Type": "bool"
+        },
+        {
+          "Name": "CollisionCreationOptions",
+          "Value": 6,
+          "Type": "int"
+        },
+        {
+          "Name": "CollisionTileSize",
+          "Value": 16.0,
+          "Type": "float"
+        },
+        {
+          "Name": "CollisionFillWidth",
+          "Value": 32,
+          "Type": "int"
+        },
+        {
+          "Name": "CollisionFillHeight",
+          "Value": 1,
+          "Type": "int"
+        },
+        {
+          "Name": "InnerSizeWidth",
+          "Value": 800.0,
+          "Type": "float"
+        },
+        {
+          "Name": "InnerSizeHeight",
+          "Value": 600.0,
+          "Type": "float"
+        },
+        {
+          "Name": "SourceTmxName",
+          "Value": "Map",
+          "Type": "String"
+        },
+        {
+          "Name": "CollisionTileTypeName",
+          "Value": "SolidCollision",
+          "Type": "String"
+        },
+        {
+          "Name": "TmxCollisionName",
+          "Value": "collision-back",
+          "Type": "String"
+        }
+      ],
+      "InstructionSaves": [],
+      "SourceType": 2,
+      "SourceFile": "FlatRedBall.TileCollisions.TileShapeCollection",
+      "HasPublicProperty": true,
       "GenerateTimedEmit": true,
       "DefinedByBase": true
     },
