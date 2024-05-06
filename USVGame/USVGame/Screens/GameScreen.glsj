@@ -161,7 +161,7 @@
         },
         {
           "Name": "TmxCollisionName",
-          "Value": "collision-front",
+          "Value": "FrontCollision",
           "Type": "String"
         }
       ],
@@ -437,7 +437,7 @@
         },
         {
           "Name": "TmxCollisionName",
-          "Value": "collision-back",
+          "Value": "BackCollision",
           "Type": "String"
         }
       ],
