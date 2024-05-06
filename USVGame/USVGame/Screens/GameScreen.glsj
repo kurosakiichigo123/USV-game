@@ -11,6 +11,24 @@
       "ProjectsToExcludeFrom": []
     }
   ],
+  "CustomVariables": [
+    {
+      "Properties": [
+        {
+          "Name": "Type",
+          "Value": "string",
+          "Type": "String"
+        },
+        {
+          "Name": "Category",
+          "Value": "Layer",
+          "Type": "String"
+        }
+      ],
+      "Name": "DefaultLayer",
+      "Category": "Layer"
+    }
+  ],
   "NamedObjects": [
     {
       "InstanceName": "PlayerList",
@@ -103,7 +121,7 @@
         },
         {
           "Name": "CollisionCreationOptions",
-          "Value": 4,
+          "Value": 6,
           "Type": "int"
         },
         {
@@ -139,6 +157,11 @@
         {
           "Name": "CollisionTileTypeName",
           "Value": "SolidCollision",
+          "Type": "String"
+        },
+        {
+          "Name": "TmxCollisionName",
+          "Value": "collision-front",
           "Type": "String"
         }
       ],
@@ -240,6 +263,16 @@
           "Name": "IsDealDamageChecked",
           "Value": true,
           "Type": "Object"
+        },
+        {
+          "Name": "FirstCollisionMass",
+          "Value": 1.0,
+          "Type": "float"
+        },
+        {
+          "Name": "CollisionElasticity",
+          "Value": 1.0,
+          "Type": "float"
         }
       ],
       "InstructionSaves": [],
@@ -261,14 +294,14 @@
       "InstructionSaves": [
         {
           "Type": "string",
-          "Member": "Targets",
-          "Value": "PlayerList",
+          "Member": "Map",
+          "Value": "Map",
           "Time": 0.0
         },
         {
           "Type": "string",
-          "Member": "Map",
-          "Value": "Map",
+          "Member": "Targets",
+          "Value": "PlayerList",
           "Time": 0.0
         }
       ],

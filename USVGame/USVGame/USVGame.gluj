@@ -92,9 +92,6 @@
     },
     {
       "Name": "Screens\\Level1"
-    },
-    {
-      "Name": "Screens\\Level2"
     }
   ],
   "EntityReferences": [
